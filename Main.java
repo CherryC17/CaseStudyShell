@@ -1,51 +1,17 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Enter first number: ");
-        double num1 = scanner.nextDouble();
-        
-        System.out.println("Enter second number: ");
-        double num2 = scanner.nextDouble();
-        
-        System.out.println("Choose an operation: +, -, *, /");
-        char operation = scanner.next().charAt(0);
-        
-        double result;
-        
-        switch (operation) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                if (num2 != 0) {
-                    result = num1 / num2;
-                } else {
-                    System.out.println("Error! Division by zero.");
-                    return;
-                }
-                break;
-            default:
-                System.out.println("Invalid operation!");
-                return;
-        }
-        
-        System.out.println("The result is: " + result);
+        double num1 = 10.0;
+        double num2 = 5.0;
+
+        double sum = num1 + num2;
+        double difference = num1 - num2;
+        double product = num1 * num2;
+        double quotient = num1 / num2;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
     }
 }
